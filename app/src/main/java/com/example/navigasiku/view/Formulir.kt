@@ -54,7 +54,9 @@ fun FormIsian(
             Row{
                 jenisK.forEach {
                     item->
-
+                    Row(verticalAlignment = Alignment.CenterVertically){
+                        
+                    }
                 }
             }
         }
