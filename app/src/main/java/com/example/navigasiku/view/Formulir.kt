@@ -67,28 +67,28 @@ fun FormIsian(
                     }
                 }
             }
-        }
-        HorizontalDivider(modifier = Modifier
-            .padding(20.dp)
-            .width(250.dp),
-            thickness = 1.dp,
-            color = Color.Red
-        )
-        OutlinedTextField(
-            value = "",
-            singleLine = true,
-            modifier = Modifier
+            HorizontalDivider(modifier = Modifier
+                .padding(20.dp)
                 .width(250.dp),
-            label = {Text(text = "Alamat")},
-            onValueChange = {},
-        )
-        Spacer(modifier = Modifier.height(30.dp))
-        Button(
-            modifier = Modifier.fillMaxWidth(1f)
-                .padding(all = 25.dp),
-            onClick = OnSubmitBtnClick
-        ){
-            Text(stringResource(id = R.string.submit))
+                thickness = 1.dp,
+                color = Color.Red
+            )
+            OutlinedTextField(
+                value = "",
+                singleLine = true,
+                modifier = Modifier
+                    .width(250.dp),
+                label = {Text(text = "Alamat")},
+                onValueChange = {},
+            )
+            Spacer(modifier = Modifier.height(30.dp))
+            Button(
+                modifier = Modifier.fillMaxWidth(1f)
+                    .padding(all = 25.dp),
+                onClick = OnSubmitBtnClick
+            ){
+                Text(stringResource(id = R.string.submit))
+            }
         }
     }
 }
